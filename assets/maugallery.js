@@ -114,6 +114,7 @@
       }
     },
     openLightBox(element, lightboxId) {
+      const id = lightboxId ? lightboxId : "galleryLightbox";
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
